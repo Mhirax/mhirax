@@ -15,7 +15,7 @@ body {
 }
 
 nav {
-    min-height: 10vh;
+    min-height: 5vh;
     padding: 1rem;
     display: flex;
     width: 100%;
@@ -32,6 +32,12 @@ a {
     
 }
 
+.svg {
+   width: 6%;
+   margin-right: 6rem;
+   height: 6%;
+}
+
 .span {
     color: aquamarine;
 }
@@ -42,7 +48,7 @@ li {
 
 nav ul {
     display: flex;
-    flex: 1 4 40rem;
+    flex: 1 1 40rem;
     justify-content: space-around;
     font-size: 2rem;
     align-items: center;
