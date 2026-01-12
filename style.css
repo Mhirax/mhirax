@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(24, 22, 22);
+}
+
+
+.main-head {
+    background-color: rgb(21, 18, 18);
+    color: aliceblue;
+}
+
+nav {
+    min-height: 10vh;
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+    /* add space to the right and left side */
+    margin: auto;
+    align-items: center;
+    /* not to make link squeeze together */
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: underline;
+    color: rgb(117, 166, 150);
+    
+}
+
+.span {
+    color: aquamarine;
+}
+
+li {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 4 40rem;
+    justify-content: space-around;
+    font-size: 2rem;
+    align-items: center;
+}
+
+#logo {
+      flex: 1 1 40rem;
+     font-family: "Pacifico", cursive;
+     font-weight: 400;
+     font-size: 3rem;
+}
