@@ -60,3 +60,33 @@ nav ul {
      font-weight: 400;
      font-size: 3rem;
 }
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 85vh;
+  padding: 4rem 8%;
+  gap: 2rem;
+  color: aliceblue;
+}
+
+.hero-content {
+    margin-bottom: 8rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+  
+  .hero img {
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    bottom: 24%;
+    top: 15%;
+    right: 15%;
+    object-fit: cover;
+    border-radius: 88%;
+  }
