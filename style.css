@@ -24,11 +24,12 @@ nav {
     align-items: center;
     /* not to make link squeeze together */
     flex-wrap: wrap;
+    border-bottom: 4px solid green;
 }
 
 a {
     text-decoration: underline;
-    color: rgb(117, 166, 150);
+    color: rgb(167, 186, 179);
     
 }
 
@@ -61,32 +62,50 @@ nav ul {
      font-size: 3rem;
 }
 
+.react {
+    color: aquamarine;
+}
+
 .hero {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 85vh;
-  padding: 4rem 8%;
-  gap: 2rem;
+  margin: 0 0 0 auto;
+  min-height: 90vh;
+  flex-wrap: wrap;
   color: aliceblue;
+  width: 95%;
 }
 
 .hero-content {
-    margin-bottom: 8rem;
+    margin-bottom: 14rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 1 40rem;
+    
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+}
+
+  .hero h3 {
+    font-size: 1.2rem;
+    margin-right: 4rem;
 }
   
   .hero img {
-    width: 20%;
-    height: 50%;
+    width: 22%;
+    height: 54%;
     position: absolute;
     bottom: 24%;
     top: 15%;
     right: 15%;
-    object-fit: cover;
-    border-radius: 88%;
+    object-fit: fill;
+    border-radius: 80%;
+    flex: 1 1 40rem;
+    align-items: flex-end;
   }
