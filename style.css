@@ -16,7 +16,7 @@ body {
 
 nav {
     min-height: 5vh;
-    padding: 1rem;
+    padding: 0.2rem;
     display: flex;
     width: 100%;
     /* add space to the right and left side */
@@ -51,7 +51,7 @@ nav ul {
     display: flex;
     flex: 1 1 40rem;
     justify-content: space-around;
-    font-size: 2rem;
+    font-size: 1.3rem;
     align-items: center;
 }
 
@@ -62,51 +62,5 @@ nav ul {
      font-size: 3rem;
 }
 
-.react {
-    color: aquamarine;
-}
 
-.hero {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 0 0 auto;
-  min-height: 90vh;
-  flex-wrap: wrap;
-  color: aliceblue;
-  width: 95%;
-}
-
-.hero-content {
-    margin-bottom: 14rem;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    flex: 1 1 40rem;
-    
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-}
-
-  .hero h3 {
-    font-size: 1.2rem;
-    margin-right: 4rem;
-}
-  
-  .hero img {
-    width: 22%;
-    height: 54%;
-    position: absolute;
-    bottom: 24%;
-    top: 15%;
-    right: 15%;
-    object-fit: fill;
-    border-radius: 80%;
-    flex: 1 1 40rem;
-    align-items: flex-end;
-  }
 
