@@ -88,6 +88,22 @@ nav ul {
     margin: 0px auto 40px;
 }
 
+.description {
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    max-width: 700px;
+     /* what is? */
+    margin: 0 auto 30px;
+   padding: 0 15px;
+}
 
+.skill-grid {
+    display: grid;
+/* what is? or we can give it display flex */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    margin-top: 60px;
+
+}
 
 
