@@ -6,6 +6,7 @@
 
 body {
     background: rgb(24, 22, 22);
+    color: white;
 }
 
 
@@ -63,6 +64,8 @@ nav ul {
      font-weight: 400;
      font-size: 3rem;
 }
+
+
 
 
 
