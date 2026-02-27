@@ -28,14 +28,14 @@ nav {
 }
 
 a {
-    text-decoration: underline;
-    color: rgb(167, 186, 179);
+    text-decoration: none;
+    color: rgb(234, 240, 242);
     
 }
 
 .svg {
    width: 6%;
-   margin-right: 6rem;
+   margin-right: 4rem;
    height: 6%;
 }
 
@@ -53,6 +53,8 @@ nav ul {
     justify-content: space-around;
     font-size: 1.3rem;
     align-items: center;
+    gap: 90px;
+    
 }
 
 #logo {
