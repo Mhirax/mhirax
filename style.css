@@ -65,7 +65,9 @@ nav ul {
      font-size: 3rem;
 }
 
-
+.about {
+    max-width: 900px;
+}
 
 
 
