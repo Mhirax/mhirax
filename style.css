@@ -103,7 +103,10 @@ nav ul {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 25px;
     margin-top: 60px;
+}
 
+.skill-item {
+    display: flex;
 }
 
 
