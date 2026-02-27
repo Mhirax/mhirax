@@ -76,7 +76,18 @@ nav ul {
     font-size: clamp(2.5rem, 5vw, 4rem); 
     text-align: center;
     margin-bottom: 10px;
-
+    color: aquamarine;
 }
+
+.divider {
+    width: 300px;
+    height: 1px;
+    /* what is? */
+    background: linear-gradient(90deg, transparent, aquamarine, transparent);
+    /* what is? */
+    margin: 0px auto 40px;
+}
+
+
 
 
