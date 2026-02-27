@@ -115,6 +115,7 @@ nav ul {
 }
 
 .Tech-img {
+    /* style to give it a decent look and size */
   width: 60px;
   height: 60px;
   object-fit: contain;
