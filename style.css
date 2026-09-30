@@ -365,6 +365,12 @@ img {
 /* ---------- PHONE ---------- */
 
 @media (max-width: 600px) {
+    .hero-photo {
+        max-width: 260px;
+        aspect-ratio: 1 / 1;
+        margin: 0 auto;
+    }
+
     .stats {
         grid-template-columns: repeat(2, 1fr);
     }
