@@ -167,6 +167,7 @@ img {
 }
 
 .status {
+    margin-top: 28px;
     display: inline-flex;
     align-items: center;
     gap: 10px;
