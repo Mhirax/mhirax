@@ -18,7 +18,7 @@
 
 <!-- ===================== ABOUT ===================== -->
 
-## <h4 align="center">🚀 About Me </h4>
+## <h3 align="center">🚀 About Me </h3>
 
 i'm Olowookere Miracle i builds websites interfaces for good user experience and also render software services(full-stack apps ) role for clients. On the frontend I use React and TypeScript, and on the backend I write APIs in Node.js, Express and Python. 
 Tell me what you're building open for collabs.
