@@ -53,16 +53,10 @@ Tell me what you're building open for collabs.
   <img src="https://skillicons.dev/icons?i=react,ts,js,nodejs,express,py,html,css,tailwind,prisma,postgres,mongodb,git,github,vscode&perline=15" alt="Tech stack" />
 </p>
 
-| Category | Tools |
-|---|---|
-| **Frontend** | React, TypeScript, JavaScript, HTML, CSS, Tailwind CSS |
-| **Backend** | Node.js, Express, Python |
-| **Databases & ORM** | PostgreSQL, MongoDB, Prisma |
-| **Tools** | Git, GitHub, VS Code, Postman |
-
 <!-- ===================== PROJECTS ===================== -->
 
-## 🌟 Featured Projects
+## 
+## <h2 align="center"> Featured projects </h2>
 
 <table>
   <tr>
