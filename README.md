@@ -18,7 +18,7 @@
 
 <!-- ===================== ABOUT ===================== -->
 
-## <h3 align="center">🚀 About Me </h3>
+## <h2 align="center">🚀 About Me </h2>
 
 i'm Olowookere Miracle i builds websites interfaces for good user experience and also render software services(full-stack apps ) role for clients. On the frontend I use React and TypeScript, and on the backend I write APIs in Node.js, Express and Python. 
 Tell me what you're building open for collabs.
@@ -26,7 +26,8 @@ Tell me what you're building open for collabs.
 
 
 
-## 🧠 What I Do
+## 
+## <h2 align="center"> What i do</h2>
 
 <table>
   <tr>
@@ -46,8 +47,7 @@ Tell me what you're building open for collabs.
 </table>
 
 <!-- ===================== TECH STACK ===================== -->
-
-## 🛠️ Tech Stack
+## <h2 align="center"> TECH STACK </h2>
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=react,ts,js,nodejs,express,py,html,css,tailwind,prisma,postgres,mongodb,git,github,vscode&perline=15" alt="Tech stack" />
