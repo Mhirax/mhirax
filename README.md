@@ -14,33 +14,15 @@
 <h4 align="center">React · TypeScript · Node.js · Express · Python</h4>
 <br/>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Mhirax&label=Profile%20views&color=2563EB&style=flat-square" alt="Profile views" />
-  <a href="https://github.com/Mhirax?tab=followers">
-    <img src="https://img.shields.io/github/followers/Mhirax?label=Followers&style=flat-square&color=2563EB" alt="Followers" />
-  </a>
-</p>
+
 
 <!-- ===================== ABOUT ===================== -->
 
 ## 🚀 About Me
 
-I'm a full-stack developer who builds websites and software for clients and for my own products. On the frontend I use React and TypeScript, and on the backend I write APIs in Node.js, Express and Python. Right now I'm studying backend engineering and system design so that what I build keeps working as it grows.
+I who builds websites interfaces and render software services(full-stack apps) for clients. On the frontend I use React and TypeScript, and on the backend I write APIs in Node.js, Express and Python. 
 
-```yaml
-name: Miracle
-github: Mhirax
-role: Full-Stack Developer — websites & software services
-favourite_stack: [ "React", "TypeScript", "Node.js", "Express", "Python" ]
-currently_building:
-  - "kudi-ai"
-  - "art-explore"
-currently_learning:
-  - "Backend engineering & system design"
-open_to: [ "Freelance projects", "Collaborations", "Full-time roles" ]
-```
 
-<!-- ===================== SERVICES ===================== -->
 
 ## 🧠 What I Do
 
