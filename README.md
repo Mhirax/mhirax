@@ -11,7 +11,7 @@
 </h1>
 
 <h3 align="center">I build websites and deliver software services</h3>
-<h4 align="center">React · TypeScript · Node.js · Express · Python</h4>
+<h4 align="center">React · TypeScript · Node.js/Express · Python</h4>
 <br/>
 
 
