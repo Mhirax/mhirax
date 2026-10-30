@@ -50,7 +50,7 @@ Tell me what you're building open for collabs.
 ## <h2 align="center"> TECH STACK </h2>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=react,ts,js,nodejs,express,py,html,css,tailwind,prisma,postgres,mongodb,git,github, alt="Tech stack" />
+  <img src="https://skillicons.dev/icons?i=react,ts,js,nodejs,express,py,html,css,tailwind,prisma,postgres,mongodb,git,github,vscode&perline=15" alt="Tech stack" />
 </p>
 
 <!-- ===================== PROJECTS ===================== -->
