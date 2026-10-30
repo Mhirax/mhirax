@@ -79,22 +79,7 @@ Tell me what you're building open for collabs.
   </a>
 </p>
 
-<!-- ===================== STATS ===================== -->
 
-## 📊 GitHub Stats
-
-<p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Mhirax&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2563EB&icon_color=2563EB" alt="GitHub Stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mhirax&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2563EB&langs_count=8" alt="Top Languages" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mhirax&theme=tokyonight&hide_border=true&background=0D1117&ring=2563EB&fire=2563EB&currStreakLabel=2563EB" alt="GitHub Streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Mhirax&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=2563EB&line=2563EB&point=FFFFFF&area=true" alt="Activity Graph" />
-</p>
 
 <!-- ===================== CONNECT ===================== -->
 
