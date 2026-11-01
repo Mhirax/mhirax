@@ -10,9 +10,7 @@
   <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="32" alt="wave" />
 </h1>
 
-<h3 align="center">I build websites and deliver software services</h3>
-<h4 align="center">React · TypeScript · Node.js/Express · Python</h4>
-<br/>
+
 
 
 
