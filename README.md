@@ -1,17 +1,3 @@
-<!--
-  GitHub Profile README — Mhirax
-  Replace every "YOUR_..." placeholder with your real link, or delete that badge.
--->
-
-<!-- ===================== HEADER ===================== -->
-
-<h1 align="center">
-  Hi, I'm Miracle
-  <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="32" alt="wave" />
-</h1>
-
-
-
 
 
 <!-- ===================== ABOUT ===================== -->
