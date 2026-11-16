@@ -4,7 +4,7 @@
 
 ## <h2 align="center">🚀 About Me </h2>
 
-i'm Olowookere Miracle i builds websites interfaces for good user experience and also render software services(full-stack apps ) role for clients. On the frontend I use React and TypeScript, and on the backend I write APIs in Node.js, Express and Python. 
+i'm Olowookere Miracle i builds websites interfaces for good user experience and also render software services(full-stack apps ) role for clients. On the frontend I use React and TypeScript, and on the backend I write APIs for apps in Node.js, Express and Python/FASTAPI. 
 Tell me what you're building open for collabs.
 
 
