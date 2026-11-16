@@ -121,6 +121,7 @@ ul {
   justify-content: space-between;
   gap: 16px;
   min-height: 64px;
+  position: relative; /* anchors the mobile menu panel */
 }
 
 .logo {
@@ -133,9 +134,14 @@ ul {
    The source image has empty space above and below the figure;
    a wide box + object-fit: cover trims it so the figure reads larger. */
 .logo img {
-  width: 92px;
-  height: 56px;
+  width: 80px;
+  height: 48px;
   object-fit: cover;
+}
+
+/* hamburger button: hidden by default, shown on phones below */
+.nav-toggle {
+  display: none;
 }
 
 .nav-links {
@@ -342,6 +348,64 @@ ul {
 @media (max-width: 767px) {
   :root {
     --gutter: 24px;
+  }
+
+  /* hamburger: two lines that turn into an X when open */
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    margin-right: -10px; /* lines up the icon with the page edge */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: transform 0.2s;
+  }
+
+  .nav-toggle[aria-expanded="true"] span:first-child {
+    transform: translateY(4px) rotate(45deg);
+  }
+
+  .nav-toggle[aria-expanded="true"] span:last-child {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+
+  /* links are hidden until the menu is opened */
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 16px var(--gutter) 24px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* big tap targets in the open menu */
+  .nav-links.open a {
+    display: block;
+    padding: 12px 24px;
+    font-size: 0.875rem;
   }
 
   .hero {
