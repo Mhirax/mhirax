@@ -1,0 +1,461 @@
+/* Change these once and the whole site follows.
+   --accent is temporary until the brand identity is decided. */
+:root {
+  --bg: #000000;
+  --surface: #111111;
+  --border: #262626;
+  --text: #ffffff;
+  --muted: #a3a3a3;
+  --accent: #4ade80;
+  --accent-text: #000000; /* text colour on top of the accent */
+
+  --font-display: "Lilita One", system-ui, sans-serif; /* logo and headings */
+  --font-body: "Instrument Sans", system-ui, sans-serif; /* everything else */
+  --container: 1120px;
+  --gutter: 20px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* keeps section headings clear of the sticky nav when jumping to them */
+  scroll-padding-top: 80px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-inline: var(--gutter);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--gutter);
+  top: -100px;
+  z-index: 20;
+  padding: 10px 16px;
+  background: var(--accent);
+  color: var(--accent-text);
+  border-radius: 8px;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+/* small mono caption above headings */
+.label {
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* ---------- NAV ---------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* fixed size so the logo never pushes the nav links around.
+   The source image has empty space above and below the figure;
+   a wide box + object-fit: cover trims it so the figure reads larger. */
+.logo img {
+  width: 92px;
+  height: 56px;
+  object-fit: cover;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--text);
+}
+
+/* ---------- BUTTONS ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 500;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.btn-accent {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
+.btn-accent:hover {
+  background: var(--text);
+}
+
+.btn-outline {
+  border-color: var(--border);
+}
+
+.btn-outline:hover {
+  border-color: var(--text);
+}
+
+/* ---------- HERO (mobile first) ---------- */
+
+.hero {
+  display: grid;
+  gap: 32px;
+  padding-top: 40px;
+  padding-bottom: 72px;
+}
+
+.hero-photo {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.hero-photo img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.hero-title {
+  margin-top: 12px;
+  font-family: var(--font-display);
+  font-weight: 400; /* Lilita One only comes in one weight */
+  font-size: clamp(2.75rem, 7vw, 5rem);
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* "Hi, I'm" is set lighter so the name (Lilita One) carries the weight */
+.hero-greeting {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.8em;
+  letter-spacing: -0.01em;
+}
+
+.hero-intro {
+  margin-top: 20px;
+  max-width: 34rem;
+  font-size: 1.0625rem;
+  color: var(--muted);
+}
+
+.hero-actions {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* ---------- SECTIONS ---------- */
+
+.section {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  border-top: 1px solid var(--border);
+}
+
+.section-title {
+  margin-top: 12px;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.875rem, 5.5vw, 2.75rem);
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  max-width: 20ch;
+}
+
+.prose {
+  margin-top: 24px;
+  max-width: 40rem;
+  color: var(--muted);
+  font-size: 1.0625rem;
+}
+
+.prose p + p {
+  margin-top: 16px;
+}
+
+.section-intro {
+  margin-top: 16px;
+  max-width: 36rem;
+  color: var(--muted);
+}
+
+.contact-email {
+  display: inline-block;
+  margin-top: 28px;
+  font-size: clamp(1.05rem, 4.5vw, 1.75rem);
+  font-weight: 500;
+  /* long email address must not overflow small screens */
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--accent);
+  transition: color 0.2s;
+}
+
+.contact-email:hover {
+  color: var(--accent);
+}
+
+.contact-links {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+
+.contact-links a {
+  font-size: 0.8125rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+
+.contact-links a:hover {
+  color: var(--text);
+}
+
+/* ---------- FOOTER ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding-block: 28px;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a:hover {
+  color: var(--text);
+}
+
+/* ---------- PHONE ONLY: everything centred, more breathing room ---------- */
+
+@media (max-width: 767px) {
+  :root {
+    --gutter: 24px;
+  }
+
+  .hero {
+    gap: 40px;
+    padding-top: 48px;
+    padding-bottom: 80px;
+    text-align: center;
+  }
+
+  .hero-photo {
+    max-width: 280px;
+    margin-inline: auto;
+  }
+
+  .hero-title {
+    margin-top: 16px;
+    /* bigger name on phones, still fits "Olowookere" on one line at 320px */
+    font-size: clamp(2.75rem, 14vw, 3.75rem);
+  }
+
+  .hero-intro {
+    margin: 24px auto 0;
+  }
+
+  /* buttons stack, full width, centred */
+  .hero-actions {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+  }
+
+  .section-title {
+    margin-inline: auto;
+  }
+
+  .prose,
+  .section-intro {
+    margin-inline: auto;
+  }
+
+  .prose p + p {
+    margin-top: 20px;
+  }
+
+  .contact-email {
+    margin-top: 32px;
+  }
+
+  .contact-links {
+    margin-top: 28px;
+    justify-content: center;
+  }
+
+  .site-footer {
+    padding-block: 32px;
+    text-align: center;
+  }
+
+  .footer-inner {
+    align-items: center;
+    gap: 16px;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+}
+
+/* ---------- TABLET AND UP ---------- */
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 32px;
+  }
+
+  .nav-links {
+    gap: 36px;
+  }
+
+  .hero {
+    grid-template-columns: 1.3fr 1fr;
+    align-items: center;
+    gap: 56px;
+    padding-top: 80px;
+    padding-bottom: 104px;
+  }
+
+  /* photo sits on the right from tablet up */
+  .hero-photo {
+    order: 2;
+    max-width: 420px;
+    justify-self: end;
+  }
+
+  .section {
+    padding-top: 104px;
+    padding-bottom: 104px;
+  }
+
+  .footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
