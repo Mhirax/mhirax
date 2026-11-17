@@ -260,6 +260,12 @@ ul {
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
+/* lead words on one line, key word underneath: every phrase is exactly
+   two lines, so the box has no empty space around the shorter ones */
+.rotator-item > span {
+  display: block;
+}
+
 .rotator-item.is-active {
   opacity: 1;
   transform: none;
@@ -464,7 +470,7 @@ ul {
   }
 
   .hero-title {
-    margin-top: 16px;
+    margin-top: 12px;
     /* bigger name on phones, still fits "Olowookere" on one line at 320px */
     font-size: clamp(2.75rem, 14vw, 3.75rem);
   }
@@ -479,7 +485,7 @@ ul {
   }
 
   .hero-intro {
-    margin: 24px auto 0;
+    margin: 16px auto 0;
     max-width: 32ch; /* shorter, more even lines on phones */
     line-height: 1.65;
   }
