@@ -219,13 +219,9 @@ ul {
   margin-top: 12px;
   font-family: var(--font-display);
   font-weight: 400; /* Lilita One only comes in one weight */
-  font-size: clamp(2.75rem, 7vw, 5rem);
+  font-size: clamp(2.5rem, 5.5vw, 4rem);
   line-height: 1.05;
   letter-spacing: 0.01em;
-}
-
-.nowrap {
-  white-space: nowrap;
 }
 
 /* role label with a green check badge in front */
@@ -255,15 +251,10 @@ ul {
 .rotator-item {
   grid-area: 1 / 1;
   align-self: center;
+  white-space: nowrap; /* one straight line */
   opacity: 0;
   transform: translateY(0.2em);
   transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-/* lead words on one line, key word underneath: every phrase is exactly
-   two lines, so the box has no empty space around the shorter ones */
-.rotator-item > span {
-  display: block;
 }
 
 .rotator-item.is-active {
@@ -275,14 +266,6 @@ ul {
   .rotator-item {
     transition: none;
   }
-}
-
-/* lead words are set lighter so the key word (Lilita One) carries the weight */
-.hero-greeting {
-  font-family: var(--font-body);
-  font-weight: 400;
-  font-size: 0.8em;
-  letter-spacing: -0.01em;
 }
 
 .hero-intro {
@@ -471,8 +454,8 @@ ul {
 
   .hero-title {
     margin-top: 12px;
-    /* bigger name on phones, still fits "Olowookere" on one line at 320px */
-    font-size: clamp(2.75rem, 14vw, 3.75rem);
+    /* sized so the longest phrase stays on one line down to 320px phones */
+    font-size: clamp(2rem, 10.5vw, 3rem);
   }
 
   /* centred paragraphs: balance spreads the words so every line is

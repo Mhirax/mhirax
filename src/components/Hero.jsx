@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { site } from "../data/site.js";
 
-// Rotating headline: "lead" is set light, "key" carries the weight.
+// Rotating headline. Keep each phrase short (about 16 characters max)
+// so it stays on one line on small phones.
 // The first phrase is the identity, so it holds a little longer.
 const phrases = [
-  { lead: "Hi, I'm", key: `${site.firstName}.`, hold: 4500 },
-  { lead: "What are you", key: "building?", hold: 3000 },
-  { lead: "Got an", key: "idea?", hold: 3000 },
-  { lead: "Let's", key: "build it.", hold: 3000 },
+  { text: `Hi, I'm ${site.firstName}.`, hold: 4500 },
+  { text: "Have a project?", hold: 3000 },
+  { text: "Got an idea?", hold: 3000 },
+  { text: "Let's build it.", hold: 3000 },
 ];
 
 function CheckBadge() {
@@ -60,9 +61,8 @@ export default function Hero() {
               longest one and nothing below jumps when they change */}
           <span className="rotator" aria-hidden="true">
             {phrases.map((p, i) => (
-              <span key={p.key} className={`rotator-item${i === index ? " is-active" : ""}`}>
-                <span className="nowrap hero-greeting">{p.lead}</span>{" "}
-                <span className="nowrap">{p.key}</span>
+              <span key={p.text} className={`rotator-item${i === index ? " is-active" : ""}`}>
+                {p.text}
               </span>
             ))}
           </span>
