@@ -7,7 +7,7 @@ import { site } from "../data/site.js";
 // shorter than the rest, but still long enough to read the name.
 const phrases = [
   { text: `Hi, I'm ${site.firstName}.`, hold: 2000 },
-  { text: "Have a project in mind?", hold: 3000 },
+  { text: "Project in mind?", hold: 3000 },
   { text: "Got an idea?", hold: 3000 },
   { text: "Let's build it.", hold: 3000 },
 ];
