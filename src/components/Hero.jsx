@@ -3,10 +3,11 @@ import { site } from "../data/site.js";
 
 // Rotating headline. Keep each phrase short (about 16 characters max)
 // so it stays on one line on small phones.
-// The first phrase is the identity, so it holds a little longer.
+// hold = milliseconds each phrase stays on screen. The greeting is
+// shorter than the rest, but still long enough to read the name.
 const phrases = [
-  { text: `Hi, I'm ${site.firstName}.`, hold: 4500 },
-  { text: "Have a project?", hold: 3000 },
+  { text: `Hi, I'm ${site.firstName}.`, hold: 2000 },
+  { text: "Have a project in mind?", hold: 3000 },
   { text: "Got an idea?", hold: 3000 },
   { text: "Let's build it.", hold: 3000 },
 ];
